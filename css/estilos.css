@@ -1,0 +1,37 @@
+body{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwall.alphacoders.com%2Fby_sub_category.php%3Fid%3D180634%26name%3DRazer%2BWallpapers&psig=AOvVaw2mxUcQm9uEbvaK7-zOxocX&ust=1589387962892000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjitdjhrukCFQAAAAAdAAAAABAD");
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.menu{
+    background-color: antiquewhite;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.site_title,
+.site_subtitle {
+    color: whitesmoke;
+    text-align: center ;
+}
+
+.site_subtitle {
+    font-family: italic;
+}
