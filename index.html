@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiago Souza</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ce895bc76.js" crossorigin="anonymous"></script>
+</head>
+<body id="inicio">
+    <header>
+        <nav class="menu">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="titulo">
+            <h1 class="site-title">Tiago Souza</h1>
+            <h2 class="site-subtitle">Junior Developer</h2>
+            <h3 class="site-subtitle">Computer Science Student</h3>
+          </div>
+    </header>
+    <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="grid">
+          <figure>
+            <img class="img-portfolio" src="./img/ufu.jpg" alt="Graduação">
+            <figcaption>Graduação</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/linguagens.jpg" alt="Linguagens">
+            <figcaption>Linguagens</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/datascience.png" alt="Data Science">
+            <figcaption>Data Science</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+            <figcaption>Projetos pessoais</figcaption>
+          </figure>  
+        </div> 
+      </section>
+      <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/TiagoTHS">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/_tiagossouza">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/tiagossouzaa/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:tiago.souza9935@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.twitch.tv/tiagoshunter">
+            <i class="fab fa-twitch"></i>
+          </a>
+        </div>
+      </section>
+
+      <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = ''
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 100 * i);
+          });
+        }
+        const titulo = document.querySelector('.site-title');
+        const subtitulo = document.querySelector('.site-subtitle');
+        const subtitulo1 = document.querySelector('h3');
+        typeWriter(titulo);
+        typeWriter(subtitulo);
+        typeWriter(subtitulo1);
+      </script>
+</body>
+</html>
