@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("https://i.redd.it/2qoh5kvm9tjx.png");
+    background-color: black;
     background-size: auto 100vh;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
@@ -32,6 +32,8 @@ body{
 }
 
 header {
+    background-image: url("https://i.redd.it/2qoh5kvm9tjx.png");
+    background-size: 1920px 100vh;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -109,11 +111,43 @@ a:hover {
     line-height: 1.8em;
 }
 
+.img-sobre{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.sobre p {
+    color: white;
+    text-indent: 1.5em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+}
+
+.sobre .avatar {
+    float: left;
+    margin-right: 2em;
+}
+
+.img-sobre {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.sobre,
 .contato,
 .portfolio {
     background-color: black;
     padding: 2em;
     min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
 }
 
 .portfolio .grid {
@@ -159,6 +193,7 @@ figcaption {
     color: white;
 }
 
+.sobre h2,
 .contato h2,
 .portfolio h2 {
     color: whitesmoke;
